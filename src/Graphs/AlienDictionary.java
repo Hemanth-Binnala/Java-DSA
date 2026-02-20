@@ -109,3 +109,33 @@ class Solution {
 
     }
 }
+
+
+Bfs algo = bfs list = array list, visited list = boolean,queue = linkedlist
+
+
+while(!q.isEmpty()){
+    Integer node = q.poll();
+    bfs.add(node);
+    for( Integer it : adg.get(node)){
+        if(vis[it] == false){
+            vis[it] == true;
+            q.add(it)
+        }
+    }
+}
+
+return bfs;
+
+DFS algo = dfs list = array list, visited list = boolean
+
+dfs(node,vis,ls,adj){
+    vis[node] = true;
+    list.add(node);
+    for(Integer it : adj.get(node)){
+        if(!vis[it]){
+            vis[it] = true
+            dfs()
+        }
+    }
+}

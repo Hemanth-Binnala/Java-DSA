@@ -59,3 +59,39 @@ class Solution {
     }
 }
 
+
+class Main {
+    public static void main(String[] args) {
+        int[][] graph = {{1, 3},{0, 2},{1, 3},{0, 2}};
+
+        Solution sol = new Solution();
+        System.out.println(sol.isbipirtite(graph));
+    }
+}
+
+class Solution{
+    public boolean isbipirtite(int[][] graph){
+        int m = graph.length;
+        int[] color = new int[m];
+        for(int i=0;i<m;i++) color[i] = -1;
+        for(int i=0;i<m;i++){
+            if(color[i] == -1){
+                if(dfs(graph,color,i,0) == false){
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+    public boolean dfs(int[][] graph,int[] color,int node,int col){
+        color[node] = col;
+        for(Integer it : graph[node]){
+            if(color[it] == -1){
+                if(!dfs(graph,color,it,1-col)) return false;
+            }
+            else if(color[it] == col) return false;
+        }
+        return true;
+    }
+    
+}

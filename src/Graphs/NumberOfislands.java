@@ -4,6 +4,11 @@
 // An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically or diagonally i.e., in all 8 directions.
 // Input: grid = [ ["1", "1", "1", "0", "1"], ["1", "0", "0", "0", "0"], ["1", "1", "1", "0", "1"], ["0", "0", "0", "1", "1"] ]
 
+["1", "1", "1", "0", "1"]
+["1", "0", "0", "0", "0"]
+["1", "1", "1", "0", "1"]
+["0", "0", "0", "1", "1"]
+
 // Output: 3
 
 // Explanation: This grid contains 2 islands. Each '1' represents a piece of land, and the islands are formed by connecting 

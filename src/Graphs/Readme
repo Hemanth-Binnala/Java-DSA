@@ -1,0 +1,26 @@
+Cycle detection in Directed graph using DFS = on the same path node has to be visited again.
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+WORD LADDER : BFS, Queue,set.
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+terminal nodes = no outgoing edges
+safe nodes = anything that leads to terminal node is safe node
+
+--> Any node part of cycle or connected to cycle (incoming edge to cycle from 
+node where as outgoing edge from cycle can be safe node) can never be safe nodes.
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+DIJKSTRA ALGO - priority queue,distance array,while loop.
+
+SHORTEST PATH - store the parent node in the array(memoize) and follow DIJKSTRA algo.
+
+1.doesn't work with negative weights
+2.doesn't work with negative cycle
+
+/////////////////////////////////////////////////////////////////////////////////////////////////

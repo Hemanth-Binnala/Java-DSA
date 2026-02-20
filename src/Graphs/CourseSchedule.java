@@ -90,3 +90,53 @@ class Solution {
     }
     
 }
+
+
+class Main {
+    public static void main(String[] args) {
+       int numCourses = 2;
+       int[][] prerequisites ={{1,0},{0,1}};
+
+        Solution sol = new Solution();
+        System.out.println(sol.course(numCourses,prerequisites));
+    }
+}
+
+///////////////////////////////DFS////////////////////////////////
+
+class Solution{
+    public boolean course(int numCourses,int[][] prerequisites){
+        int l = prerequisites.length;
+        int[] vis = new int[numCourses];
+        List<Integer>[] graph = new ArrayList[numCourses];
+        for(int i=0;i< numCourses;i++) graph[i] = new ArrayList<>();
+        for(int[] edge : prerequisites){
+            int cour = edge[0];
+            int pre = edge[1];
+            graph[pre].add(cour);
+        }
+        Stack<Integer> st = new Stack<Integer>();
+        for(int i=0;i<l;i++){
+            vis[i] = 0;
+        }
+        for(int i=0;i<l;i++){
+            if(vis[i] == 0){
+                if(dfs(vis,i,graph,st)) return false;
+            }
+        }
+       return true;
+}
+    public boolean dfs(int[] vis,int node,List<Integer>[] graph,Stack<Integer> st){
+        vis[node] = 1;
+        for(Integer it : graph[node]){
+            if(vis[it] == 0){
+                if(dfs(vis,it,graph,st)) return true;
+            }
+            else if(vis[it] == 1){
+                return true;
+            }
+        }
+        vis[node] = 2;
+        return false;
+    }
+}
