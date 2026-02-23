@@ -24,3 +24,38 @@ SHORTEST PATH - store the parent node in the array(memoize) and follow DIJKSTRA 
 2.doesn't work with negative cycle
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
+
+BELLMAN FORD ALGO - can find the shortest path for negative edges as well.
+
+works only with directed graph.If given undirected graph make directed by adding two edges like 1 - 2 then make it as 1 -> 2 and 1 <- 2.
+Relax all the edges N-1 times sequentially.
+edges cam be in any order.
+
+** Since is the graph is of N nodes, in worst case , we will take N-1 edges to reach from the first to last.thereby N-1 iterations.
+
+Relaxation :- if(dist[u] + edw < dist[v]) dist[v] = dist[u] + edw;
+
+on Nth iteration the relaxation will be done and if the dist[] array gets reduced then there exists negative cycle.
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+FLOYD WARSHAL ALGO - multi source shortes path
+
+finds shortest path from each node to all other nodes.
+Also can detect negative cycles
+note : Go via every vertex and node
+Pre computed 
+Dynamic Programming
+
+for via =0;via<n;via++{
+    for i=0;i<n;i++{
+    for j=0;j<n;j++{
+        cost[i][j] = min (cost[i][j] , cost[i][via] + cost[via][j]);
+    }
+}
+}
+
+detect a negative cycle :
+ for(i to n){
+    cost[i][j] < 0; it is negative
+ }
