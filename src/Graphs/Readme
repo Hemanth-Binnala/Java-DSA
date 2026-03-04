@@ -59,3 +59,54 @@ detect a negative cycle :
  for(i to n){
     cost[i][j] < 0; it is negative
  }
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Minimum spanning tree 
+
+-> A tree in which we are having N nodes and N-1 edges is called MST & all nodes are reachable from each other
+-> a tree can have many spanning trees but tree with minimum weight is MST.
+
+PRIM'S ALGO 
+
+-- helps us to get minimum sum of MST and also its edges.
+-- we need PQ(wt,node,parent), visited array
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Disjoint set DS 
+
+-> Dynamic Programming
+-> find parent -- if the ultimate parent of the two are same then they belong to same group
+-> union - rank,size
+-> rank = parent and rank array
+
+Union (u,v)
+1.find ultimate parent of u & v ; pu,pv
+2. find rank of pu,pv
+3. find smaller rank to larger rank always.
+
+-- do path compression
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+KRUSKAL'S ALGO
+
+can find MST
+1. sort all the edges
+2. 
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+KOSARAJU'S ALGO
+
+-- Strongly connected components (SCC)
+-- this also gives us number of SCC and print the SCC
+-- SCC are only valid for directed graphs
+-- if the pair of vertices are reachable vice-versa then the component is SCC.
+-- thought process is reverse the edges and do dfs.
+-- 1. sort all the edges according to finishing time.
+-- 2. reverse the graph 
+-- 3. do a dfs

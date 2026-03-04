@@ -1,0 +1,121 @@
+Grid / Matrix DFS (Very Common)
+
+These are the most “pure DFS” style questions.
+
+200 – Number of Islands      -- completed
+
+695 – Max Area of Island      -- completed
+
+463 – Island Perimeter         -- completed
+
+130 – Surrounded Regions   
+
+733 – Flood Fill
+
+417 – Pacific Atlantic Water Flow
+
+1254 – Number of Closed Islands
+
+1020 – Number of Enclaves
+
+1905 – Count Sub Islands
+
+934 – Shortest Bridge
+
+79 – Word Search
+
+🌳 Tree DFS
+
+Classic recursive DFS on trees.
+
+104 – Maximum Depth of Binary Tree
+
+111 – Minimum Depth of Binary Tree
+
+543 – Diameter of Binary Tree
+
+124 – Binary Tree Maximum Path Sum
+
+112 – Path Sum
+
+113 – Path Sum II
+
+257 – Binary Tree Paths
+
+129 – Sum Root to Leaf Numbers
+
+98 – Validate Binary Search Tree
+
+236 – Lowest Common Ancestor of a Binary Tree
+
+🔗 Graph DFS (Adjacency List Based)
+
+These are textbook DFS traversal problems.
+
+547 – Number of Provinces
+
+841 – Keys and Rooms
+
+797 – All Paths From Source to Target
+
+802 – Find Eventual Safe States
+
+133 – Clone Graph
+
+2101 – Detonate the Maximum Bombs
+
+🔄 Backtracking (DFS Style)
+
+These use DFS recursion pattern.
+
+46 – Permutations
+
+47 – Permutations II
+
+77 – Combinations
+
+78 – Subsets
+
+90 – Subsets II
+
+39 – Combination Sum
+
+40 – Combination Sum II
+
+131 – Palindrome Partitioning
+
+51 – N-Queens
+
+17 – Letter Combinations of a Phone Number
+
+🔥 Advanced DFS (Cycle Detection / Topological Style)
+
+207 – Course Schedule             -- complete
+
+210 – Course Schedule II            -- complete
+
+785 – Is Graph Bipartite?           -- complete
+
+684 – Redundant Connection          -- complete
+
+1557 – Minimum Number of Vertices to Reach All Nodes    -- complete
+
+🎯 If You Want the Most Important Ones for Interviews
+
+Focus on these first:
+
+200
+130
+417
+79
+547
+841
+797
+207
+46
+78
+39
+131
+236
+124
+543
