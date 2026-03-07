@@ -110,3 +110,27 @@ KOSARAJU'S ALGO
 -- 1. sort all the edges according to finishing time.
 -- 2. reverse the graph 
 -- 3. do a dfs
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+TARJAN'S ALGO
+
+If after removing any of the edge, the graph is divided into two/more seperate graphs then that edge is called bridge.
+
+-- two arrays 1. Time insertion array 2. low time insertion array
+-- timeInsertionArray[] = DFS time insertion
+-- lowestTimeInsertion[] =  min lowest time insertion of all the adjNodes expect parent node.
+using the above two arrays based on the cond we can get the bridges.
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ARTICULATION POINT
+
+-- Nodes on whose removal the graph breaks into multiple components
+
+same as Tarjan's algo but slight diff in lowestTimeInsertion[] -- min of all adj nodes apart from parent & visited nodes
+
+
+
+

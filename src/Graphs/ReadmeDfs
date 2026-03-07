@@ -8,21 +8,21 @@ These are the most “pure DFS” style questions.
 
 463 – Island Perimeter         -- completed
 
-130 – Surrounded Regions   
+130 – Surrounded Regions   -- completed
 
-733 – Flood Fill
+733 – Flood Fill           -- completed
 
-417 – Pacific Atlantic Water Flow
+417 – Pacific Atlantic Water Flow -- completed
 
-1254 – Number of Closed Islands
+1254 – Number of Closed Islands -- completed
 
-1020 – Number of Enclaves
+1020 – Number of Enclaves   -- completed
 
-1905 – Count Sub Islands
+1905 – Count Sub Islands    -- completed
 
-934 – Shortest Bridge
+934 – Shortest Bridge   -- completed
 
-79 – Word Search
+79 – Word Search        -- completed
 
 🌳 Tree DFS
 
@@ -52,17 +52,17 @@ Classic recursive DFS on trees.
 
 These are textbook DFS traversal problems.
 
-547 – Number of Provinces
+547 – Number of Provinces   -- completed
 
-841 – Keys and Rooms
+841 – Keys and Rooms     -- completed
 
-797 – All Paths From Source to Target
+797 – All Paths From Source to Target -- completed
 
-802 – Find Eventual Safe States
+802 – Find Eventual Safe States -- completed
 
-133 – Clone Graph
+133 – Clone Graph -- completed (need to research)
 
-2101 – Detonate the Maximum Bombs
+2101 – Detonate the Maximum Bombs -- completed
 
 🔄 Backtracking (DFS Style)
 
@@ -104,18 +104,35 @@ These use DFS recursion pattern.
 
 Focus on these first:
 
-200
-130
-417
-79
-547
-841
-797
-207
-46
+200   -- completed
+130   -- completed
+417  -- completed
+79   -- completed
+547  -- completed
+841  -- completed
+797  -- completed
+207 -- completed
+46 -- completed
 78
 39
 131
 236
 124
 543
+
+
+
+DFS   -- in progress
+BFS
+TopoSort
+Dijkstra
+bellaman ford
+Floyd warshall 
+MST
+Disjoint
+Kosaraju
+Tarjans
+Atriculation
+
+
+
